@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Welcome to Math with SageMath!"
+date:   2020-08-05 17:11:59 -0400
+categories: news
+---
+
+# Welcome!
+
+In this site you will find some math problems solved using SageMath.
+
+I will solve the examples step by step, and then I will revisit them and solve them using built-in SageMath functions.
+
+I hope it's helpful for you!
