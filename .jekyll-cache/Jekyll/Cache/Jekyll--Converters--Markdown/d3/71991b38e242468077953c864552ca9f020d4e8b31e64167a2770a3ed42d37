@@ -1,0 +1,29 @@
+I"±<h1 id="math-with-sagemath">Math with SageMath</h1>
+<p>Collection of basic math problems solved using SageMath.</p>
+
+<h2 id="contents-of-this-repo">Contents of this Repo</h2>
+
+<ul>
+  <li>Version of SageMath used: 9.0 (Python 3)</li>
+  <li>Examples</li>
+</ul>
+
+<h2 id="launch-me-on-binder">Launch me on Binder!</h2>
+
+<p>If you want to test the examples without having to download all the software, you can use my container that I set up on Binder. You will be able to run the SageMath notebooks online.</p>
+
+<p><strong>IMPORTANT:</strong> Changes are not permanent. If you want to keep your changes, you will have to download any files you modified.</p>
+
+<p>Click at the Binder banner to launch the project on Binder and run all the examples from the web.
+<a href="https://mybinder.org/v2/gh/dbalague/mathwithsagemath.git/master"><img src="https://mybinder.org/badge_logo.svg" alt="Binder" /></a></p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>
+    <h3 id="sagemath">SageMath</h3>
+    <ul>
+      <li>The Docker image for Binder was created using a <a href="https://hub.docker.com/r/sagemath/sagemath">Docker image</a> from <a href="https://sagemath.org/">SageMath</a></li>
+    </ul>
+  </li>
+</ul>
+:ET
