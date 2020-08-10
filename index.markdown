@@ -4,6 +4,7 @@
 
 layout: home
 ---
+# Math with SageMath
 
 Collection of basic math problems solved using SageMath.
 
