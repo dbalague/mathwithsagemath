@@ -29,7 +29,7 @@ $$
     A-\lambda I.
 $$
 
-However, in SageMath (as well as in Python), `lambda` is a reserved word. So we will use the letter $l$ instead. We store the matrix into the variable `AmlI`: 
+However, in SageMath (as well as in Python), `lambda` is a reserved word. So we will use the letter $$l$$ instead. We store the matrix into the variable `AmlI`: 
 
 ``` python
 l = var('l', latex_name=r'\lambda')
