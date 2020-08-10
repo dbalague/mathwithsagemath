@@ -22,7 +22,7 @@ title: Math with SageMath
 email: d.balague@tudelft.nl
 description: >- # this means to ignore newlines until "baseurl:" 
       Collection of basic math problems solved using SageMath.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "mathwithsagemath" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dbalague
 github_username:  dbalague
