@@ -4,7 +4,7 @@
 
 layout: home
 ---
-# Math with SageMath
+
 Collection of basic math problems solved using SageMath.
 
 I divided the blog in sections. Each section will start with the explanation on how to solve the problems by hand and what SageMath functions we can use. Examples will follow.
