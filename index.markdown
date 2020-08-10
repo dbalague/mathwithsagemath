@@ -4,7 +4,7 @@
 
 layout: home
 ---
-## Math with SageMath
+## What is it?
 
 In Math with Sagemath you will find a collection of basic math problems solved using SageMath.
 
