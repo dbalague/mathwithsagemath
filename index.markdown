@@ -4,15 +4,13 @@
 
 layout: home
 ---
-# Math with SageMath
+In Math with Sagemath you will find a collection of basic math problems solved using SageMath.
 
-Collection of basic math problems solved using SageMath.
+I divided the blog in sections. Each section will start with the explanation on how to solve the problems by hand and what SageMath functions we can use. You will also find links to examples solved using SageMath.
 
-I divided the blog in sections. Each section will start with the explanation on how to solve the problems by hand and what SageMath functions we can use. Examples will follow.
+To better understand how to solve the examples with SageMath, I recommend downloading the corresponding Jupyter notebooks, or launch the binder (see below) so that you can execute them online.
 
-To better understand the examples, I recommend downloading the corresponding Jupyter notebooks, or launch the binder (see below) so that you can execute them online.
-
-The content will be added as posts and I will post randomly... So be patient if there is a topic missing!
+The content will be added as posts and I will post randomly on different topics... So be patient if there is a topic missing!
 
 ## Contents of this Repo
 
