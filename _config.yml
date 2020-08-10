@@ -35,6 +35,21 @@ plugins:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
+# GitHub Config
+lsi: false
+safe: true
+source: .
+destination: ./_site
+paginate: 4
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
