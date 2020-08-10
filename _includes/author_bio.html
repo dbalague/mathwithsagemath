@@ -1,0 +1,19 @@
+
+<hr>
+<span>
+   <div>
+      <div>
+         <h3>
+            {% if author.image %}
+               <img src="{{author.image}}" class="author-img" height=60>
+            {% endif %}
+            {{author.name}} &nbsp;
+           {% if author.twitter %}
+              <a href="{{author.twitter}}" class="icon fa-twitter"><span class="label">Twitter</span></a> 
+            {% endif %}
+          </h3>
+      </div>
+   </div>
+   {{ author.bio }}
+</span>
+<br>
