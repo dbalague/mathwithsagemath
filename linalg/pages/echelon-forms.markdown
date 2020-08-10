@@ -99,4 +99,4 @@ Be careful!!
 
 Check the following examples on how to perform the operations and obtain the echelon forms.
 
-- [Example 1](/linear/algebra/matrix/echelon/2020/08/07/Echelon-form-Example1.html)
+- [Example 1](/mathwithsagemath/linear/algebra/matrix/echelon/2020/08/07/Echelon-form-Example1.html)
