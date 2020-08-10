@@ -4,8 +4,6 @@
 
 layout: home
 ---
-## What is it?
-
 In Math with Sagemath you will find a collection of basic math problems solved using SageMath.
 
 I divided the blog in sections. Each section will start with the explanation on how to solve the problems by hand and what SageMath functions we can use. You will also find links to examples solved using SageMath.
