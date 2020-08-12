@@ -36,7 +36,7 @@ All functions $$F_i(x_1,x_2,x_3)$$ are scalar functions.
 The figure below shows a visualization of the field.
 
 <center>
-<img src="/multivarcalc/vectorfields/Images/vector_field_example1.png" alt="Vector field" width="40%" class="center">
+<img src="/mathwithsagemath/multivarcalc/vectorfields/Images/vector_field_example1.png" alt="Vector field" width="40%" class="center">
 </center>
 <br>
 
