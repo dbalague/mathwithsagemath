@@ -32,7 +32,7 @@ plot_vector_field(F,(x,-3,3),(y,-3,3),aspect_ratio=1)
 ```
 This will produce the figure
 <center>
-<img src="/multivarcalc/vectorfields/Images/vector_field_example1.png" alt="Vector field" width="40%" class="center">
+<img src="/mathwithsagemath/mutivarcalc/vectorfields/Images/vector_field_example1.png" alt="Vector field" width="40%" class="center">
 </center>
 
 Notice that we used the option `aspect_ratio=1` to produce a squared figure.
@@ -49,7 +49,7 @@ plot_vector_field(F,(x,-2,2),(y,-2,2),aspect_ratio=1)
 ```
 The previous command produces the figure below:
 <center>
-<img src="/multivarcalc/vectorfields/Images/vector_field_example2.png" alt="Vector field" width="40%" class="center">
+<img src="/mathwithsagemath/mutivarcalc/vectorfields/Images/vector_field_example2.png" alt="Vector field" width="40%" class="center">
 </center>
 <br>
 
@@ -95,6 +95,6 @@ show(G1+G2)
 
 The figure below shows the corresponding output (we rotated the figure for a better perspective):
 <center>
-<img src="/multivarcalc/vectorfields/Images/vector_field_example3.png" alt="Vector field" width="100%" class="center">
+<img src="/mathwithsagemath/mutivarcalc/vectorfields/Images/vector_field_example3.png" alt="Vector field" width="100%" class="center">
 </center>
 <br>
