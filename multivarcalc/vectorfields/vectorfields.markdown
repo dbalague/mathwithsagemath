@@ -30,7 +30,7 @@ or
 
 $$\mathbf{F}(x,y,z) = F_1(x,y,z)\mathbf{i}+F_2(x,y,z)\mathbf{j}+F_3(x,y,z)\mathbf{k}.$$
 
-All functions $$F_i(x_1,x_2,\dots,x_n)$$ are scalar functions.
+All functions $$F_i(x_1,x_2,x_3)$$ are scalar functions.
 
 <b><font color="green">EXAMPLE 1.</font></b> In $$\mathbb{R}^2$$ the vector field $$\mathbf{F}(x,y)=\langle 1,0\rangle$$ assigns to each point in the plane, the horizontal vector $$\langle 1,0\rangle$$.
 The figure below shows a visualization of the field.
