@@ -57,7 +57,7 @@ The figure below shows a visualization of the field.
 The figure below shows a visualization of the vector field $$\mathbf{F}(x,y)=\langle x, x^2\rangle$$ in $$\mathbb{R}^2$$.
 
 <center>
-<img src="/multivarcalc/vectorfields/Images/vector_field_example2.png" alt="Vector field" width="40%" class="center">
+<img src="/mathwithsagemath/multivarcalc/vectorfields/Images/vector_field_example2.png" alt="Vector field" width="40%" class="center">
 </center>
 <br>
 
