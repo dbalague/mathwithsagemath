@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /linalg/eigvvs/
+permalink: /linalg/matrices/eigvvs/
 ---
 **Table of contents**
 * Table of contents

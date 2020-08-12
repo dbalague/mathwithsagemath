@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /linalg/echelon/
+permalink: /linalg/matrices/echelon/
 ---
 
 **Table of contents**
