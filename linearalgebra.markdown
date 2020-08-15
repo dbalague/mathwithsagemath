@@ -10,7 +10,7 @@ _**Important note**_: Remember that in SageMath (and Python!) <u>indexing starts
 
 In this page you will find problems related to linear algebra.
 
-- Vectors
+- Vectors in $$\mathbb{R}^n$$
     - Norms and basic operations
     - Dot product
     - Cross product
