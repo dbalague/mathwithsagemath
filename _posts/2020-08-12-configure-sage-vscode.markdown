@@ -11,7 +11,7 @@ categories: VSCode configurations
 {:toc}
 
 ## Introduction ##
-It took me some time to find [this post](https://ask.sagemath.org/question/43240/sagemath-and-vscode/) explaining how to configure SageMath with VSCode. So I will share the instructions with you for configuring it with a Mac. However, in our case, <u>this installation does not require any additional Python installation</u> (like Conda, for example). <u>This is the main difference between my instructions for Mac, and the instructions for Mac in the link above.</u>
+It took me some time to find [this post](https://ask.sagemath.org/question/43240/sagemath-and-vscode/) that explains how to configure SageMath with VSCode. So I will share the instructions with you for configuring it with a Mac. However, in our case, <u>this installation does not require any additional Python installation</u> (like Conda, for example). <u>This is the main difference between my instructions for Mac, and the instructions for Mac in the link above.</u>
 
 If you follow the link above, you will find the instructions for Windows as well as the ones for Mac.
 
