@@ -21,7 +21,7 @@ So let's start!
 
 ## Download and install the software ##
 
-If you do not have SageMath or you do not have Visual Studio Code, please visit the "[Getting the Software](/gettingsoftware)" page and you will find links to download them.
+If you do not have SageMath or you do not have Visual Studio Code, please visit the "[Getting the Software](/mathwithsagemath/gettingsoftware)" page and you will find links to download them.
 
 Once you have SageMath and VSCode installed, click on the configuration button on the left pane, then extensions, and if it is not installed, install the [Microsoft Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
 
