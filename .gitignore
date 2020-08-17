@@ -4,3 +4,4 @@ _site
 .jekyll-metadata
 vendor
 _config_github.yml
+sagemath_examples
