@@ -5,3 +5,4 @@ _site
 vendor
 _config_github.yml
 sagemath_examples
+_config.yml
