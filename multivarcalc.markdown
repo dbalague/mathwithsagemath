@@ -10,5 +10,5 @@ In this page you will find the examples for Multivariable Calculus.
 
 - [Vector Fields](/mathwithsagemath/multivarcalc/vectorfields/index.html)
     - [Plotting Vector Fields using SageMath](/mathwithsagemath/multivariable/calculus/vector/fields/2020/08/11/plotting-vector-fields.html)
-    - Computing Divergence and Curl using SageMath
+    - [Computing Divergence and Curl using SageMath](/mathwithsagemath/multivariable/calculus/vector/fields/2020/09/08/computing-curl-and-divergence.html)
 
