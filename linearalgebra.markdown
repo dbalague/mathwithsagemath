@@ -12,9 +12,9 @@ In this page you will find problems related to linear algebra.
 
 - Vectors in $$\mathbb{R}^n$$
     - Norms and basic operations
-    - Dot product
-    - Cross product
-    - Linear Combinations
+        - Dot product
+        - Cross product
+    - [Linear Combinations and Linear Independence](/mathwithsagemath/linalg/vectors/linear-combination/index.html)
 
 - Matrices
     - Norms and basic operations
