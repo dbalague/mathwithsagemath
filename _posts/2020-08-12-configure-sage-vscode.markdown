@@ -21,9 +21,9 @@ It took me some time to find [this post](https://ask.sagemath.org/question/43240
 
 However, the instructions mentioned in the link above require the installation of additional Python modules and the creation of a specific SageMath Kernel for VSCode. <u>My instructions, do not require any additional packages nor kernels</u>.
 
-Again, if you follow the link above, you will find the instructions for Windows as well as the ones for Mac.
+Again, if you follow the link above you will find the instructions for Windows as well as the ones for Mac.
 
-In a Linux setting, the configurations is similar to the one for Mac. I actually configured my Ubuntu Linux container to be used with VSCode when used as a Dev Container (I might post about it later).
+In a Linux setting, the configuration is similar to the one for Mac. I actually configured my Ubuntu Linux container to be used with VSCode when used as a Dev Container (I might post about it later).
 
 So let's start!
 
