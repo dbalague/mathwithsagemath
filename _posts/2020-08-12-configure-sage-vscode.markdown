@@ -10,16 +10,18 @@ Updated in November 16, 2020
 
 After upgrading to Big Sur, I figured out a way to run the SageMath kernel without too many complications.
 
-In this updated version I simplified the configuration of SageMath with VSCode. At the time of this update, I am still using SageMath 9.0 and the version VSCode is Version: 1.51.1
+In this updated version I simplified the configuration of SageMath with VSCode. At the time of this update, I am still using SageMath 9.0 and the VSCode is Version: 1.51.1
 
 **Table of contents**
 * Table of contents
 {:toc}
 
 ## Introduction ##
-It took me some time to find [this post](https://ask.sagemath.org/question/43240/sagemath-and-vscode/) that explains how to configure SageMath with VSCode. So I will share the instructions with you for configuring it with a Mac. However, in our case, <u>this installation does not require installing any additional Python module. This is the main difference between my instructions for Mac, and the instructions for Mac in the link above.</u>
+It took me some time to find [this post](https://ask.sagemath.org/question/43240/sagemath-and-vscode/) that explains how to configure SageMath with VSCode. 
 
-If you follow the link above, you will find the instructions for Windows as well as the ones for Mac.
+However, the instructions mentioned in the link above require the installation of additional Python modules and the creation of a specific SageMath Kernel for VSCode. <u>My instructions, do not require any additional packages nor kernels</u>.
+
+Again, if you follow the link above, you will find the instructions for Windows as well as the ones for Mac.
 
 In a Linux setting, the configurations is similar to the one for Mac. I actually configured my Ubuntu Linux container to be used with VSCode when used as a Dev Container (I might post about it later).
 
@@ -27,7 +29,7 @@ So let's start!
 
 **Important Note 1:** The instructions require to use the BASH terminal. 
 
-**Important Note 2:** Using this configuration makes SageMath's Python the default version.
+**Important Note 2:** Using this configuration makes SageMath's Python the default version of Python. I have been using Python mostly when coding in SageMath, so this is not an issue for me. 
 
 ## Download and install the software ##
 
