@@ -8,7 +8,9 @@ categories: VSCode configurations
 
 Updated in November 16, 2020
 
-In this updated version I simplified the configuration of SageMath with VSCode.
+After upgrading to Big Sur, I figured out a way to run the SageMath kernel without too many complications.
+
+In this updated version I simplified the configuration of SageMath with VSCode. At the time of this update, I am still using SageMath 9.0 and the version VSCode is Version: 1.51.1
 
 **Table of contents**
 * Table of contents
@@ -31,9 +33,9 @@ So let's start!
 
 If you do not have SageMath or you do not have Visual Studio Code, please visit the "[Getting the Software](/mathwithsagemath/gettingsoftware)" page and you will find links to download them.
 
-Once you have SageMath and VSCode installed, click on the configuration button on the left pane, then extensions, and if it is not installed, install the [Microsoft Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+Once you have SageMath and VSCode installed, click on the configuration button on the left pane, then extensions, and if they are not installed, install the [Microsoft Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python), and the [Microsoft Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).
 
-**NOTE.** The extension warns you that the system version of Python is not supported. If you installed a different Python distribution (Conda, for example), there should be no problem. However, this will not be an issue since we are going to use the Python version that comes with SageMath.
+**NOTE.** The Python extension warns you that the system version of Python is not supported. If you installed a different Python distribution (Conda, for example), there should be no problem. However, this will not be an issue since we are going to use the Python version that comes with SageMath.
 
 ## Make SageMath visible (and usable) ##
 
@@ -58,43 +60,24 @@ python --version
 ```
 The output should be ```Python 3.7.3```.
 
-## Installing the SageMath Kernel ##
+## Configure the Python path in VSCode ##
 
-Open a terminal and execute the following command replacing ```<your user>``` with your Mac user. Run
+Configure VSCode to recognize SageMath's Python by follwing these steps:
 
-```
-open /Users/<your user>/Library/Jupyter/kernels/
-```
+1. Open VSCode
+2. Click on Code -> Preferences -> Settings (in the top menu).
+3. Make sure you have the User settings selected. 
+4. In the search bar type "default interpreter".
+5. Click on "Python(1)".
+6. Add ```/Applications/SageMath-9.0.app/Contents/Resources/sage/local/bin/python3``` to the box.
 
-In the folder `kernels` from the finder window that we opened in the previous step,  we will create a folder called `sagemath-vscode`.
+**NOTE:** If you prefer to not modify the default python interpreter globally (for all instances of VSCode), choose "Workspace" in Step 3 above.
 
-<center>
-<img src="/mathwithsagemath/Images/posts/configure-sagemath/install01.png" alt="" width="80%" class="center">
-</center>
-<br>
-
-We will copy the `kernel.json` from the `python3` directory into the `sagemath-vscode`, and we will modify it to look like this:
-
-Next, we copy the following content into the file:
-```json
-{
-    "argv": [
-        "/Applications/SageMath-9.0.app/Contents/Resources/sage/local/bin/python3",
-        "-m",
-        "sage.repl.ipython_kernel",
-        "-f",
-        "{connection_file}"
-    ],
-    "display_name": "SageMath 9.0 for VSCode",
-    "language": "python"
-}
-```
-
-Save and close the file. The installation should be done.
+The installation should be done!
 
 ## Testing the installation
 
-If you used VSCode for editing the files, you need to close all instances and quit. Closing the windows will not work. Then open VSCode and open a directory. In our case it is called `Setting up VSCODE`.
+You need to close all instances of VSCode and quit. Closing the windows will not work. Then open VSCode and open a directory. In our case it is called `Setting up VSCODE`.
 
 <center>
 <img src="/mathwithsagemath/Images/posts/configure-sagemath/test01.png" alt="" width="80%" class="center">
@@ -108,10 +91,19 @@ Then we create a new Jupyter notebook using the "command palette". We can find i
 </center>
 <br>
 
-Now we can choose the SageMath kernel that we just created.
+Most likely, you will run into these errors 
+```
+Python 3.8.2 64-bit requires ipykernel to be installed.
+```
+```
+IPyKernel not installed into interpreter Python 3.8.2 64-bit
+```
 
+After *dismissing the errors*, we choose the `SageMath 9.0` kernel in the top right box with text `:busy`.
 
-On the top right of the window you can click on `No Kernel: Not Started` or any other kernel you may have, and choose "SageMath 9.0 for VSCode"
+**Note:** In the previous instructions the box had text `No Kernel: Not Started` (or any other kernel you had).
+
+Type a SageMath command into a cell and run it to connect to the Kernel.
 
 Enjoy working with SageMath and VSCode!
 
