@@ -6,18 +6,26 @@ author: daniel_balague
 categories: VSCode configurations
 ---
 
+Updated in November 16, 2020
+
+In this updated version I simplified the configuration of SageMath with VSCode.
+
 **Table of contents**
 * Table of contents
 {:toc}
 
 ## Introduction ##
-It took me some time to find [this post](https://ask.sagemath.org/question/43240/sagemath-and-vscode/) that explains how to configure SageMath with VSCode. So I will share the instructions with you for configuring it with a Mac. However, in our case, <u>this installation does not require any additional Python installation</u> (like Conda, for example). <u>This is the main difference between my instructions for Mac, and the instructions for Mac in the link above.</u>
+It took me some time to find [this post](https://ask.sagemath.org/question/43240/sagemath-and-vscode/) that explains how to configure SageMath with VSCode. So I will share the instructions with you for configuring it with a Mac. However, in our case, <u>this installation does not require installing any additional Python module. This is the main difference between my instructions for Mac, and the instructions for Mac in the link above.</u>
 
 If you follow the link above, you will find the instructions for Windows as well as the ones for Mac.
 
 In a Linux setting, the configurations is similar to the one for Mac. I actually configured my Ubuntu Linux container to be used with VSCode when used as a Dev Container (I might post about it later).
 
 So let's start!
+
+**Important Note 1:** The instructions require to use the BASH terminal. 
+
+**Important Note 2:** Using this configuration makes SageMath's Python the default version.
 
 ## Download and install the software ##
 
@@ -27,34 +35,36 @@ Once you have SageMath and VSCode installed, click on the configuration button o
 
 **NOTE.** The extension warns you that the system version of Python is not supported. If you installed a different Python distribution (Conda, for example), there should be no problem. However, this will not be an issue since we are going to use the Python version that comes with SageMath.
 
-## Install required packages ##
+## Make SageMath visible (and usable) ##
 
-The following step is crucial if you want the VSCode to work properly with Jupyter:
+**NOTE:** This step makes SageMath's Python de default Python.
 
-Now we open a Terminal (the command line). It comes with your Mac. If you don't know what it is or where to find it, you can search for it in your Launchpad.
-
-Then, copy the following commands (one by one) and press enter/return after each one
+To make SageMath visible and usable within VSCode, we need to modify our bash profile. The configuration file is located in 
+```
+/Users/<your user>/.bash_profile
+```
+Use any editor to add the following lines at the end of the file:
 
 ```bash
-python3 -m pip install notebook --user
-python3 -m ipykernel install --user
-python3 -m pip install jupyter --user
+export SAGE_ROOT="/Applications/SageMath-9.0.app/Contents/Resources/sage"
+export SAGE_LOCAL="/Applications/SageMath-9.0.app/Contents/Resources/sage/local"
+source /Applications/SageMath-9.0.app/Contents/Resources/sage/local/bin/sage-env
 ```
 
-This will produce a lot of output, but you should not worry about it. If the first command works, at the end of the execution you will read `Successfully installed` followed by a lot of package names with the form `package-x.y.z`.
-
-If the second one works, you will read the output
-`Installed kernelspec python3 in /Users/<your user>/Library/Jupyter/kernels/python3`. Take note of this directory!
-
-In the same terminal we will open the directory above replaceing `<your user>` with your Mac user and removing the `python3` like in the command below. Run
+To make sure it works, in a new terminal, try running the following command
 
 ```bash
-open /Users/<your user>/Library/Jupyter/kernels/
+python --version
 ```
-
-A finder window will open in this location. Do not close the terminal yet since we will need to run one more step in it.
+The output should be ```Python 3.7.3```.
 
 ## Installing the SageMath Kernel ##
+
+Open a terminal and execute the following command replacing ```<your user>``` with your Mac user. Run
+
+```
+open /Users/<your user>/Library/Jupyter/kernels/
+```
 
 In the folder `kernels` from the finder window that we opened in the previous step,  we will create a folder called `sagemath-vscode`.
 
@@ -80,11 +90,7 @@ Next, we copy the following content into the file:
 }
 ```
 
-To conclude the installation, we go back to the terminal and we will run the following command:
-
-```bash
-echo "export PATH=\"/Applications/SageMath-9.0.app/Contents/Resources/sage/local/bin:$PATH\"" >> ~/.bash_profile
-```
+Save and close the file. The installation should be done.
 
 ## Testing the installation
 
